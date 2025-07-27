@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            background-color: blanchedalmond;
+            padding: 25px;
+            margin: auto;
+            border-radius: 10px;
+            width: 500px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        #submit {
+            font-weight: bold;
+            background-color: greenyellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" placeholder="Enter your Name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" placeholder="Enter your Email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" placeholder="Enter your Password" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" min="17" max="100" placeholder ="Age" required><br><br>
+
+        <label for="Gender">Gender</label> <br>
+        <input type="radio" name="rating">Male
+        <input type="radio" name="rating">Female
+        <input type="radio" name="rating">Other
+        <br><br>
+
+        <label for="course">Course/Department:</label><br>
+        <select name="course">
+            <option value="select">Select</option>
+            <option value="cse">Computer Science (CSE)</option>
+            <option value="ece">Electronics (ECE)</option>
+            <option value="ee">Electrical (EE)</option>
+            <option value="me">Mechanical (ME)</option>
+            <option value="py">Pharmacy (PY)</option>
+        </select><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea name="address" rows="3" cols="40"></textarea><br><br>
+
+        <input id="submit" type="submit" value="Register">
+    </form>
+</body>
+
+</html>
