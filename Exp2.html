@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Banking UI</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bank-ui {
+            background: #fff;
+            padding: 20px 20px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .balance {
+            font-size: 30px;
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .deposit {
+            background-color: rgb(83, 170, 83);
+        }
+
+        .withdraw {
+            background-color: #ea4c41;
+        }
+
+        @media (max-width: 400px) {
+            .bank-ui {
+                padding: 20px 15px;
+            }
+
+            .balance {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bank-ui">
+        <div class="balance">$0</div>
+        <button class="deposit">Deposit</button>
+        <button class="withdraw">Withdraw</button>
+    </div>
+</body>
+
+</html>
