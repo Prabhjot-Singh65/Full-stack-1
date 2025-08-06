@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Live character Counting</h1>
+    <textarea placeholder="Stat Typing...." id ="texts"></textarea>
+    <h2>The Number of character are : <span id="updateVal">0</span></h2>
+</body>
+<script>
+
+let CharacterCount = 0;
+
+const inputElement = document.getElementById("texts");
+
+inputElement.oninput = function(){
+    CharacterCount =this.value.length;
+    document.getElementById("updateVal").innerText = CharacterCount;
+}
+</script>
+</html>
